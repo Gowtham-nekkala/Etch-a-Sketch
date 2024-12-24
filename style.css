@@ -1,24 +1,40 @@
 body {
     align-items: center;
     text-align: center;
+    color: white;
+    background-color: #00284d;
 }
 
 #grid{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 50px;
+    align-items: center;
 }
 
 .container {
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 5px;
+    background-color: white;
     width: 960px;
     height: 960px;
     border: 1px solid black;
 }
 
-.bu{
+#resize{
+    font-size: 16px;
+    border-radius: 5px;
     text-align: center;
-    align-items: center;
-    width: 50px;
+    width: 100px;
     height: 50px;
     padding: 10px;
+    background-color: #004280;
+    color: white;
 }
+
+.square {
+    box-sizing: border-box;
+    background-color: #fff;
+    transition: background-color 0.3s ease;
+  }
